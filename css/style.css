@@ -54,6 +54,10 @@ header div span{
 
 }
 
+table, th, td {
+    border: 1px solid black;
+  }
+
 nav{
     display: flex;
 }
@@ -273,6 +277,13 @@ form.search{
     align-items: center;
 }
 
+.default-flex-5{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+}
+
 
 .spacing{
     padding: 4rem 1rem 0 1rem;
@@ -465,6 +476,11 @@ footer section article a{
     .default-flex-4 {
         display: flex;
         flex-wrap: wrap-reverse;
+    }
+
+    .default-flex-5 {
+        display: flex;
+        flex-direction: column;
     }
 
     #produkt-1 {
