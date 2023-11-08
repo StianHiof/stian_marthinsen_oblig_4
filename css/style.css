@@ -332,6 +332,10 @@ form.search{
     width: 100%;
 }
 
+.default-flex-5 img{
+    width: 100%;
+}
+
 #quote{
     color: #8AC5D2;
     margin: 0 0 1rem 0;
