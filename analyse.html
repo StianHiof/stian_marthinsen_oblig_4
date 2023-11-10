@@ -391,6 +391,94 @@
                         </p>
                     </article>
                 </section>
+                <section class="default-flex-5">
+                    <article>
+                        <h2>Tilgjengelighet</h2>
+                        <p><strong>Skjermleserkompabilitet:</strong></p>
+                        <p>
+                            Bruker windows sin egen skjermleser, da jeg tenker det er den som er mest brukt for folk med nedsatt syn
+                            og dyseleksi - noe jeg tenker er majoriteten. De som har sterkt nedsatt syn eller blind, har ofte
+                            profesjonelt utstyr med egne programvarer. Der er brukervennligheten noe helt annet, enn den integrert
+                            i windows. Vet dette da jeg kjenner en person som er blind veldig godt. <br>Her er noen erfaringer gjort ved tale-navigering:<br>
+                        </p>
+                        <ul>
+                            <li>Kan bruke TAB knappen for å lett navigere rundt på nettsiden</li>
+                            <li>Finner alle koblinger veldig lett</li>
+                            <li>Sliter å lese opp vanlig innhold/tekst! Hjelper å bruke pil-tastene</li>
+                            <li>Har en fornuftig rekkefølge på navigeringen, starter i header, main, aside, så til slutt footer. (Følger HTML kodingen)</li>
+                            <li>Kommer med tilleggsinformasjon ved hvert punkt, men kunne vært bedre. Punkter i header har bra forklaring innebygd i koden, andre steder ikke.</li>
+                        </ul>
+                    </article>
+                    <article>
+                        <p><strong>Tastaturnavigisjon:</strong></p>
+                        <p>
+                            Nettstedet kan definitivt navigeres med tastatur, så det fungerer ganske bra. Dropdown boksen for
+                            skostørrelse på produktsiden, fungerer bra - siden den har skriften "skostørrelse" inni seg. 
+                            Dette gir brukeren tydelig informasjon. De forskjellige skostørrelsene kan byttes lett med pil opp/ned.
+                            Søkefelt i header, navigasjon i aside, og koblingene i footer - alt ser ut til og lett navigeres med
+                            tastatur. 
+                        </p>
+                    </article>
+                    <article>
+                        <p><strong>ARIA-attributter:</strong></p>
+                        <p>
+                            Har lagt inn over 10 stk. Aria-attributter på nettsidene. Har beskrevet navigasjon, sko etter kjønn i 
+                            header, aside seksjonen, AI anbefalinger, Kundeservice i footer, seksjon for skomodeller på index-side - 
+                            samt at Ukens Inspirasjon fikk mer beskrivelse. Alt dette vil hjelpe en bruker med skjermleser, uten 
+                            at det kommer synlig ut på nettstedet. 
+                        </p>
+                    </article>
+                </section>
+                <section class="default-flex-5">
+                    <article>
+                        <h2>Microdata og Rich Results</h2>
+                        <p>
+                            Har fått lagt til en god del data på produktsiden, og det var artig å se at 3 gyldige elementer 
+                            ble oppdaget i Google sin validator. <br>Her er et bilde av testresultatet:<br>
+                        </p>
+                        <img src="img/oblig_4/Microdata_resultat.png" alt="Microdata før endringer">
+                    </article>
+                    <article>
+                        <p>
+                            Som man ser, har to elementer noen ikke-kritiske problemer. La oss ta en titt på elementet; 
+                            <strong>Tekstutdrag om produkter</strong>
+                        </p>
+                        <img src="img/oblig_4/Microdata_ikke-kritisk.png" alt="to varsler">
+                        <p>
+                            Her forteller Google at den savner to stk. dataer på; availability og priceValidUntil. Men siden 
+                            denne nettsiden ikke har lagerføring, og heller ikke tilbud på produktet - kan man se bort fra 
+                            disse varslene. Men definitivt noe som er nyttig, der lagerføring og andre funksjoner er lagt til.
+                        </p>
+                    </article>
+                    <article>
+                        <p>Det andre elementet er: <strong>Selgeroppføringer</strong></p>
+                        <img src="img/oblig_4/Microdata_ikke-kritisk_v2.png" alt="fem varsler">
+                        <p>
+                            Her forteller Google at den savner fem stk. dataer:
+                        </p>
+                        <ol>
+                            <li>Description</li>
+                            <li>Global identifikator</li>
+                            <li>Availability</li>
+                            <li>harMerchantReturnPolicy</li>
+                            <li>shippingDetails</li>
+                        </ol>
+                    </article>
+                    <article>
+                        <p>
+                            Nummer 1 på lista over, ble ordnet. Fikk lagt til beskrivelse av skomodellen, og var enkelt gjort 
+                            med en (itemprop="description") på den gjeldende artikkelen. Nummer 2 til 5 lot jeg være uendret. 
+                            Dette på grunn av at det ikke er relevant i denne sammenhengen - siden slik data ikke er kodet på 
+                            nettsiden. Men er selvfølgelig noe man burde legge til i en fungerende nettbutikk. 
+                        </p>
+                    </article>
+                </section>
+                <section class="default-flex-5">
+                    <article>
+                        <h2>Meta og SOME</h2>
+
+                    </article>
+                </section>
             </section>
         </main>
         <aside>

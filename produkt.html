@@ -29,7 +29,7 @@
                 <i class="fa-solid fa-magnifying-glass"></i>
             </form>
             <nav>
-                <ul class="navbar">
+                <ul class="navbar" aria-label="Hoved navigasjon">
                     <li><a href="produkt.html">Nyheter:</a></li>
                     <li><a href="produkt.html" class="innrykk">Høstsesong</a></li>
                     <li><a href="produkt.html" class="innrykk">Barn</a></li>
@@ -53,15 +53,15 @@
                     <li><a href="#">Analyse av nettstedet:</a></li>
                     <li><a href="analyse.html" class="innrykk">Les mer om analysen her</a></li>
                 </ul>
-                <ul id="gender-nav">
+                <ul id="gender-nav" aria-label="Sortering etter kjønn">
                     <li><a href="produkt.html" class="gender-nav-barn">Barn</a></li>
                     <li><a href="produkt.html" class="gender-nav-kvinne">Kvinne</a></li>
                     <li><a href="produkt.html" class="gender-nav-herre">Herre</a></li>
                 </ul>
             </nav>
         </header>
-        <main>
-            <section>
+        <main itemscope itemtype="https://schema.org/Product">
+            <section aria-label="Navigasjonssti på hvor du er">
                 <span class="nav-sti">
                     <a href="index.html">Sensitive Feet</a>
                     <a href="produkt.html">Barn</a>
@@ -71,44 +71,49 @@
             </section>
             <section id="produkt-align">
                 <section class="default-flex-3">
-                    <h2>Skomodell</h2>
+                    <h2 itemprop="name">Skomodell</h2>
+                    <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                        <meta itemprop="reviewCount" content="85"> 
+                        <meta itemprop="ratingValue" content="4.1">
+                    </div>
                     <article>
-                        <img src="img/running-shoe-371624_1280.jpg" alt="Løpesko_modell_1">
+                        <img src="img/running-shoe-371624_1280.jpg" alt="Løpesko_modell_1" itemprop="image">
                         Bildet er tatt av <a href="https://pixabay.com/no/users/stux-12364/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=371624">Stefan Schweihofer</a> fra <a href="https://pixabay.com/no//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=371624">Pixabay</a>
                     </article>
                 </section>
                 <section class="info-text">
-                    <article>
+                    <article itemprop="description">
                         <h5>Spesifikasjoner</h5>
                         <p>Lett og luftig sneaker på en kraftig yttersåle med god demping, spesialt laget for de med plattfot. Joggeskoene har overdel i mesh og er myke, og stabile, og svært gode på foten. Dette er optimale fritidssko. Skolissene er laget av 100 % resirkulert polyester.</p>
                     </article>
                 </section>
             </section>
             <section class="content">
-                <div id="shoe-size">
+                <div id="shoe-size" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <meta itemprop="priceCurrency" content="NOK">
                     <p><strong>Usikker?</strong></p>
                     <p>Print ut sålens størrelse/form, fra 3D-modell: <a href="#">Her</a></p>
-                    <p id="price-tag"><strong>999 kr.</strong> </p>
+                    <p id="price-tag" itemprop="price" content="999.00"><strong>999 kr.</strong> </p>
                 </div>
-                <form class="child-option">
+                <form class="child-option" aria-label="Skostørrelse">
                     <select id="shoe-option" name="sizelist">
-                        <option value="25">Skostørrelse: 25</option>
-                        <option value="26">Skostørrelse: 26</option>
-                        <option value="27">Skostørrelse: 27</option>
-                        <option value="28">Skostørrelse: 28</option>
-                        <option value="29">Skostørrelse: 29</option>
-                        <option value="30">Skostørrelse: 30</option>
-                        <option value="31">Skostørrelse: 31</option>
-                        <option value="32">Skostørrelse: 32</option>
-                        <option value="33">Skostørrelse: 33</option>
-                        <option value="34">Skostørrelse: 34</option>
-                        <option value="35">Skostørrelse: 35</option>
+                        <option value="25" itemprop="size">Skostørrelse: 25</option>
+                        <option value="26" itemprop="size">Skostørrelse: 26</option>
+                        <option value="27" itemprop="size">Skostørrelse: 27</option>
+                        <option value="28" itemprop="size">Skostørrelse: 28</option>
+                        <option value="29" itemprop="size">Skostørrelse: 29</option>
+                        <option value="30" itemprop="size">Skostørrelse: 30</option>
+                        <option value="31" itemprop="size">Skostørrelse: 31</option>
+                        <option value="32" itemprop="size">Skostørrelse: 32</option>
+                        <option value="33" itemprop="size">Skostørrelse: 33</option>
+                        <option value="34" itemprop="size">Skostørrelse: 34</option>
+                        <option value="35" itemprop="size">Skostørrelse: 35</option>
                     </select>
                     <a href="betaling.html" class="handlekurv">Legg i handlekurv</a>
                 </form>
             </section>
         </main>
-        <aside>
+        <aside aria-label="Hovednavigasjon venstre side">
             <section class="navbar-main">
                 <ul>
                     <li><a href="produkt.html">Nyheter:</a></li>
@@ -140,7 +145,7 @@
             <div>
                 <a href="#" class="footer-tab">? Hjelp</a>
             </div>
-            <section>
+            <section aria-label="Kundeservice">
                 <article id="kundeservice">
                     <h3>Kundeservice</h3>
                     <a href="#">Kontakt oss</a>
